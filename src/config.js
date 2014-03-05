@@ -16,16 +16,16 @@ exports.defaults = function() {
 };
 
 exports.placeholder = function() {
-  return "\t\n\n"+
-         "  # emberscript:               # config settings for the emberscript compiler module\n" +
-         "    # lib: undefined           # use this property to provide a specific version of EmberScript\n" +
-         "    # extensions: [\"em\"]       # default extensions for EmberScript files\n" +
-         "    # sourceMapDynamic: true   # whether or not to inline the source maps in the compiled JavaScript\n" +
-         "    # sourceMapExclude: [/\\/specs?\\//, /_spec.js$/] # files to exclude from source map generation\n" +
-         "    # sourceMapConditional: false # whether or not to use conditional source maps\n" +
-         "    # options:                 # options for the EmberScript compiler\n" +
-         "      # sourceMap:true         # whether or not to create source maps\n" +
-         "      # bare:true              # whether or not to use the default safety wrapper\n";
+  return "\t\n\n" +
+         "  emberscript:               # config settings for the emberscript compiler module\n" +
+         "    lib: undefined           # use this property to provide a specific version of EmberScript\n" +
+         "    extensions: [\"em\"]       # default extensions for EmberScript files\n" +
+         "    sourceMapDynamic: true   # whether or not to inline the source maps in the compiled JavaScript\n" +
+         "    sourceMapExclude: [/\\/specs?\\//, /_spec.js$/] # files to exclude from source map generation\n" +
+         "    sourceMapConditional: false # whether or not to use conditional source maps\n" +
+         "    options:                 # options for the EmberScript compiler\n" +
+         "      sourceMap:true         # whether or not to create source maps\n" +
+         "      bare:true              # whether or not to use the default safety wrapper\n";
 };
 
 exports.validate = function(config, validators) {

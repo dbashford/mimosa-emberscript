@@ -1,8 +1,8 @@
 "use strict";
 
-var path = require( 'path' )
-  , _ = require( 'lodash' )
-  , config = require( './config' )
+var path = require( "path" )
+  , _ = require( "lodash" )
+  , config = require( "./config" )
   , getExtensions = function ( mimosaConfig ) {
     return mimosaConfig.emberscript.extensions;
   };
